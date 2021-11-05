@@ -1,0 +1,20 @@
+{
+  "name": "nodeatm",
+  "version": "1.0.0",
+  "description": "node file for ATM console program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisLora/nodeATM.git"
+  },
+  "author": "Chris Lora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisLora/nodeATM/issues"
+  },
+  "homepage": "https://github.com/ChrisLora/nodeATM#readme"
+}
