@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ChrisLora/nodeATM/issues"
   },
-  "homepage": "https://github.com/ChrisLora/nodeATM#readme"
+  "homepage": "https://github.com/ChrisLora/nodeATM#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }

@@ -1,9 +1,10 @@
 "use strict";
-//TODO: Add debugger (see demo video)
-//! Don't forget to add "console": "integratedTerminal" to .vscode/launch.json after creating launch configuration
-//TODO: Import necessary functions from atm.js
-//TODO: Utilize prompt-sync so we can get user input for various functions
-//* Refer to Intro to Node.js PowerPoint for prompt-sync installation instructions
+//***DONE***TODO: Add debugger (see demo video)/! Don't forget to add "console": "integratedTerminal" to .vscode/launch.json after creating launch configuration
+//***DONE***TODO: Import necessary functions from atm.js
+const { getBalance, withdraw, deposit, validatePin } = require("./atm");
+
+//***DONE***TODO: Utilize prompt-sync so we can get user input for various functions/* Refer to Intro to Node.js PowerPoint for prompt-sync installation instructions
+const prompt = require('prompt-sync')();
 
 function accessATM() {
   //TODO: Prompt users for their pin
