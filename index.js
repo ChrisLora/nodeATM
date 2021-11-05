@@ -7,21 +7,43 @@ const { getBalance, withdraw, deposit, validatePin } = require("./atm");
 const prompt = require('prompt-sync')();
 
 function accessATM() {
-  //TODO: Prompt users for their pin
+  //***DONE***TODO: Prompt users for their pin
+  let enteredPin = prompt("Enter your pin.")
   //Use ATM.js validatePin function to verify pin matches
+  if (validatePin(enteredPin) = true){
+    mainMenu();
+  }
   //Proceed to main menu ONLY if they match
 }
 
-//TODO: Call accessATM function
+//***DONE***TODO: Call accessATM function
+accessATM()
 
 function mainMenu() {
   //TODO: Set up a main menu.  Prompt users for ATM selection to do the following:
   //! Remember - we should keep prompting the user for options until they quit!
-  //Get current balance
-  //Make a deposit
-  //Make a withdrawal
-  //Restart
-  //Quit
+  let selection = prompt("Choose from the following options and enter the corresponding number.\n(1)Get Current Balance\n(2)Make Deposit\n(3)Make Withdrawl\n(4)Restart\n(5)Quit\n")
+  switch (selection) {
+  //1 Get current balance
+    case "1":
+      getBalance()
+      break;
+  //2 Make a deposit
+    case "2":
+      deposit()
+      break;
+  //3 Make a                                  
+    case "3":
+      withdraw()
+      break;
+  //4 Restart
+    case "4":
+      accessATM()
+      break;
+  //5 Quit
+    case "5":
+      return;
+  }
 }
 
-//TODO: Call mainMenu function to start our app!
+//***DONE***TODO: Call mainMenu function to start our app!
